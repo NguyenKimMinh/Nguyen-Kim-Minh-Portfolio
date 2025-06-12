@@ -15,14 +15,15 @@ const toggleTheme = () => {
   
   document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
+
+      
+##    const toggleButton = document.createElement('button');##
+##    toggleButton.textContent = 'Toggle Theme';##
+##    toggleButton.className = 'theme-toggle';##
+##    toggleButton.addEventListener('click', toggleTheme);##
   
-    const toggleButton = document.createElement('button');
-    toggleButton.textContent = 'Toggle Theme';
-    toggleButton.className = 'theme-toggle';
-    toggleButton.addEventListener('click', toggleTheme);
-  
-    document.querySelector('header .container').appendChild(toggleButton);
-  });
+##   document.querySelector('header .container').appendChild(toggleButton);
+  }); ##
   
   // ===== Smooth Scroll =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
