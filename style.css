@@ -52,7 +52,15 @@ body {
   .nav-links li a {
     font-weight: 600;
   }
-  
+  .profile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  vertical-align: middle;
+  }
+
   /* Section Headings */
   section h2 {
     border-bottom: 2px solid #333;
