@@ -153,3 +153,60 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Project cards with images */
+.card.project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.card.project:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.project-text {
+  flex: 1;
+}
+
+/* Icons in Skills */
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .card.project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+}
